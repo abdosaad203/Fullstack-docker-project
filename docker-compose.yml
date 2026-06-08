@@ -2,8 +2,7 @@ version: "3.9"
 
 services:
   frontend:
-    image: abdosaad0/frontend-app:v1
-    build: ./frontend
+    image: abdosaad0/frontend-app:latest
     container_name: frontend
     ports:
       - "5000:80"
@@ -11,8 +10,7 @@ services:
       - backend
 
   backend:
-    image: abdosaad0/backend-app:v1
-    build: ./backend
+    image: abdosaad0/backend-app:latest
     container_name: backend
     ports:
       - "8080:8080"
@@ -23,7 +21,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DATABASE: postgres
       REQUEST_ORIGIN: http://localhost
-    depends_on: 
+    depends_on:
       - postgres
       - redis
 
