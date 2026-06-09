@@ -9,7 +9,7 @@ import Exercise from "./Exercise";
 
 const ExerciseList = () => (
   <div className="exercise-list">
-    <h3>Part 1</h3>
+    <h3>Part Abdo</h3>
     <Exercise exerciseNumber="1.12" ExerciseComponent={<AmIRunning />} />
     <Exercise exerciseNumber="1.14" ExerciseComponent={<BackendConnection />} />
     <h3>Part 2</h3>
